@@ -1,55 +1,102 @@
-<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Sismetro</title>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aula 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-        <body>
-            <h1 class="text-center">Hello, World</h1>
-            <div class="row">
-                <div class="col-8 col-md-6 col-lg-4 text-center" style="background-color: rgb(45, 199, 199);">
-                    Geografia
-                    <p>A Geografia do Brasil compreende aspectos como área, clima, hidrografia, relevo, vegetação, entre outros.
-                        Localizado na América do Sul, sua extensão é de mais de 8,5 milhões de quilômetros quadrados de extensão (8.515.759,090 km2) o que faz dele o quinto maior país do mundo.
-                        Também é um dos países mais populosos. Apesar de ter 204.450.649 habitantes, é qualificado como pouco povoado pelo fato de que conta com 22,4 hab./km2.
-                        O país está dividido em cinco regiões (Nordeste, Norte, Centro-Oeste, Sudeste e Sul) e tem 26 estados e um Distrito Federal.
-                        Faz fronteira com Venezuela, Guiana, Suriname, Guiana Francesa, Colômbia, Peru, Bolívia, Paraguai, Argentina e Uruguai. Isso quer dizer que faz fronteira com quase todos os países desse subcontinente americano, exceto com Chile e Equador.
-                        O relevo brasileiro é formado principalmente por planaltos e depressões. O Brasil é banhado pelo oceano Atlântico e possui as maiores bacias hidrográficas do mundo.</p>
-                        <div class="row">
-                            <img src="mapa.jpg" alt="Mapa">
-                        </div>
-                </div>
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h1>Agenda</h1>
+          </div>
+          <div class="card-body">
+            <p>O gomes nao possui</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+              <h1>Onde se passa a história do barbeiro?</h1>
+          </div>
+          <div class="card-body">
+            <p>Composta em 1816 por um italiano (Gioacchino Rossini) e baseada na peça de um francês (Pierre Beaumarchais), é difícil saber por que a trama se passa em Sevilha. Mas é lá que acontece a história de um barbeiro que tenta ajudar um amigo, o conde de Almaviva, a se casar com a jovem donzela Rosina.</p>
+          </div>
+          <div class="card-footer">
+            <img src="logo.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-header">
+            <h1>Formulário</h1>
+          </div>
+          <div class="card-body">
+            <img src="gomes.png">
+            <div class="col-4">
+            <form>
+              <label for="nome">Nome</label>
+                <input type="text" id="nome" class="input-padrao" required>
 
-                <div class="col-8 col-md-6 col-lg-4 text-center" style="background-color: rgb(4, 99, 99);">
-                    Educação Fisica
-                    <p>Os princípios que nortearam a introdução da Educação Física no país surgiram em 1810 com a Carta Régia que implementava a Ginástica Alemã na Academia Real Militar, no Brasil Império.
-                    Das iniciativas do meio político e intelectual, cabe destacar o primeiro livro brasileiro de Educação Física: o “Tratado de Educação Física – Moral dos Meninos”, escrito por Joaquim Jerônimo Serpa, em 1828, que enfatizava a saúde do corpo e espírito.
-                    O parecer de Rui Barbosa em 1882 – “Reforma do Ensino Primário” – tratou a Educação Física como parte fundamental para a formação moral da juventude e reforçou sua importância na grade escolar. Foi o início da história da Educação Física Escolar no Brasil e das grandes fases que passaria.</p>
-                    <div class="row">
-                        <img src="fisica.jpg" alt="Educação Fisica">
-                    </div>
-                    
-                </div>
-                <div class="col-8 col-md-6 col-lg-4 text-center" style="background-color: rgb(5, 199, 199);;">
-                    História 
-                    <p>A história do Brasil começou com a ocupação dos seres humanos a cerca de 12-20 mil anos.
-                        No século XVI, os portugueses começaram a colonizar estas terras e transferiram africanos para serem mão de obra escrava nos engenhos que construíram aqui.
-                        Por sua vez, estes trabalhadores forçados trariam novos alimentos e animais que mudariam a história dos povos originários para sempre.
-                        Pré-História ou período Pré-Cabralino
-                        Há evidências da presença de humanos no Brasil há pelo menos 12 mil anos. Cerca de três grandes grupos de seres humanos primitivos ocuparam o Brasil, como os caçadores-coletores, os sambaquis e os povos agricultores.
-                        Podemos encontrar vestígios dos povos da pré-história em vários pontos do Brasil como, por exemplo, na Serra da Capivara (PI) ou em Lajedo de Soledade (RS).
-                        Chegada dos portugueses ao território (1500)
-                        Em 1500, os portugueses se deram conta que há terras no sul da linha do Equador e passaram a ocupar o território. Isto mudaria para sempre a vida dos povos indígenas, dos africanos e dos europeus.
-                        De acordo com a história oficial do Brasil, este período é denominado “colonial”, pois o território passou a ser uma colônia do Reino de Portugal.</p>
-                        <div class="row">
-                            <img src="historia.jpg" alt="historia">
-                        </div>
-                    
-                </div>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        </body>
+                <label for="email">Email</label>
+                <input type="email" id="email"class="input-padrao" required placeholder="seuemail@gmail.com">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="30" rows="5" id="mensagem"class="input-padrao" required></textarea>
+            </form> 
+          </div>
+          <div class="card-footer">
+            <div class="col-8">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
 </html>
