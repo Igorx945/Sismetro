@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de media query</title>
+    <style>
+        * {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        #cA{
+            background-color: aqua;
+        }
+        #cB{
+            background-color: bisque;
+        }
+        #cC{
+            background-color: rgb(255, 140, 0);
+        }
+        .coluna{
+            width: 100%;
+            float: left;
+        }
+        @media (min-width: 800px) {
+            .coluna{
+                width:50%
+            }
+        }
+        @media (min-width: 1000px) {
+            .coluna{
+                width:33.33%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cA" class="coluna">
+        <h1>coluna A</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi? Voluptatum.</p>
+    </div>
+    <div id="cB"  class="coluna">
+        <h1>coluna B</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi? Voluptatum.</p>
+    </div>
+
+    <div id="cC"  class="coluna">
+        <h1>coluna C</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi? Voluptatum.</p>
+    </div>
+
+
+
+</body>
+
+</html>
