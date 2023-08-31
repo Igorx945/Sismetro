@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 008</title>
+    <style>
+        * {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 34, 0);
+        }
+
+        header {
+            background-color: greenyellow;;
+            color: #FFF;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1{
+            color: #000000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+        }
+
+        #cA {
+            background-color: aqua;
+        }
+
+        #cB {
+            background-color: bisque;
+        }
+
+        #cC {
+            background-color: rgb(255, 140, 0);
+        }
+
+        #cD {
+            background-color: blue;
+        }
+
+        .coluna {
+            width: 100%;
+            float: left;
+        }
+
+        .final {
+            text-align: center;
+            background-color: greenyellow;
+        }
+
+        @media (min-width: 800px) {
+            .coluna {
+                width: 50%
+            }
+        }
+
+        @media (min-width: 1000px) {
+            .coluna {
+                width: 33.33%
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .coluna {
+                width: 25%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="quotex.png">
+        <h1>Quotex</h1>
+        <nav>
+            <ul>
+                <li><a href="https://qxbroker.com/">Início</a></li>
+                <li><a href="https://www.armastore.com.br/armas-de-fogo/">Sessão 1</a></li>
+                <li><a href="https://www.youtube.com/">Sessão 2</a></li>
+                <li><a href="https://www.nike.com.br/">Sessão 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <div id="cA" class="coluna">
+        <h1>coluna A</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam
+            omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel
+            necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse
+            dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi
+            sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at
+            molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse
+            maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi?
+            Voluptatum.</p>
+    </div>
+    <div id="cB" class="coluna">
+        <h1>coluna B</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam
+            omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel
+            necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse
+            dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi
+            sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at
+            molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse
+            maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi?
+            Voluptatum.</p>
+    </div>
+
+    <div id="cC" class="coluna">
+        <h1>coluna C</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam
+            omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel
+            necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse
+            dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi
+            sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at
+            molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse
+            maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi?
+            Voluptatum.</p>
+    </div>
+    <div id="cD" class="coluna">
+        <h1>coluna A</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa dolore deserunt dolor commodi. Ipsam
+            omnis, quae provident ipsa laudantium at doloribus id voluptatibus saepe consequuntur fugit vel
+            necessitatibus nostrum, aperiam natus. A, numquam deserunt eius accusantium ipsum nam aut blanditiis esse
+            dolores, veritatis soluta? Temporibus sed repellat tempore nemo, accusantium iure in accusamus quidem quasi
+            sunt autem ullam sequi quibusdam et aperiam, fugit asperiores enim vero. Libero impedit repellendus at
+            molestiae itaque. Quod cupiditate harum ea nulla nesciunt similique quam fugiat qui molestiae quis esse
+            maiores necessitatibus dolor obcaecati quia tempora, enim doloremque velit dicta, officia, nostrum nisi?
+            Voluptatum.</p>
+    </div>
+    <div class="final">
+        <h4>Quotex</h4>
+        <h1><strong>O que é Quotex?</strong></h1>
+        <p>Quotex broker é uma empresa relativamente jovem, que iniciou suas operações em 2020. Ela permite a negociação
+            de opções binárias. O corretor opera globalmente, o que expande muito sua clientela.</p>
+    </div>
+
+
+</body>
+
+</html>
