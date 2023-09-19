@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora JavaScript</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="text" id="display" readonly>
+    <br>
+    <button onclick="limpar()">C</button>
+    <button onclick="anexarNumero('7')">7</button>
+    <button onclick="anexarNumero('8')">8</button>
+    <button onclick="anexarNumero('9')">9</button>
+    <button onclick="anexarOperador('+')">+</button>
+    <br>
+    <button onclick="anexarNumero('4')">4</button>
+    <button onclick="anexarNumero('5')">5</button>
+    <button onclick="anexarNumero('6')">6</button>
+    <button onclick="anexarOperador('-')">-</button>
+    <br>
+    <button onclick="anexarNumero('1')">1</button>
+    <button onclick="anexarNumero('2')">2</button>
+    <button onclick="anexarNumero('3')">3</button>
+    <button onclick="anexarOperador('*')">*</button>
+    <br>
+    <button onclick="anexarNumero('0')">0</button>
+    <button onclick="anexarOperador('/')">/</button>
+    <button onclick="calcularResultado()">=</button>
+    
+    <script>
+        let display = document.getElementById('display');
+        let operando1 = '';
+        let operando2 = '';
+        let operador = '';
+
+        function limpar() {
+            display.value = '';
+            operando1 = '';
+            operando2 = '';
+            operador = '';
+        }
+
+        function anexarNumero(numero) {
+            display.value += numero;
+        }
+
+        function anexarOperador(op) {
+            if (operando1 === '') {
+                operando1 = display.value;
+                operador = op;
+                display.value = '';
+            }
+        }
+
+        function calcularResultado() {
+            if (operando1 !== '' && operador !== '' && display.value !== '') {
+                operando2 = display.value;
+                let resultado;
+                switch (operador) {
+                    case '+':
+                        resultado = parseFloat(operando1) + parseFloat(operando2);
+                        break;
+                    case '-':
+                        resultado = parseFloat(operando1) - parseFloat(operando2);
+                        break;
+                    case '*':
+                        resultado = parseFloat(operando1) * parseFloat(operando2);
+                        break;
+                    case '/':
+                        resultado = parseFloat(operando1) / parseFloat(operando2);
+                        break;
+                    default:
+                        resultado = 'Erro';
+                }
+                display.value = resultado;
+                operando1 = resultado.toString();
+                operando2 = '';
+                operador = '';
+            }
+        }
+    </script>
+</body>
+</html>
