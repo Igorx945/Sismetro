@@ -10,6 +10,9 @@ function multiplicacao(n1, n2) {
 function divisao(n1, n2) {
     return n1 / n2;
 }
+function igual(n1, n2) {
+    return n1 = n2;
+}
 function somar() {
     document.getElementById("resultado").value = soma(Number(document.getElementById("n1").value),
        Number (document.getElementById("n2").value));
@@ -24,5 +27,9 @@ function vezes() {
 }
 function dividir() {
     document.getElementById("resultado").value = divisao(Number(document.getElementById("n1").value),
+       Number (document.getElementById("n2").value));
+}
+function resultado() {
+    document.getElementById("resultado").value = igual(Number(document.getElementById("n1").value),
        Number (document.getElementById("n2").value));
 }
