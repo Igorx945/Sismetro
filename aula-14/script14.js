@@ -98,8 +98,8 @@ function apagar_x(){
 function apagar(){
     document.getElementById("valor").value = document.getElementById("valor").value.substring (0,document.getElementById("valor").value.length - document.getElementById("valor").value.length)
 }
-function adicionar_ponto(){
-    if(!document.getElementById("valor").value.incluides(".")){
+function add_ponto(){
+    if(!document.getElementById("valor").value.includes(".")){
         document.getElementById("valor").value = document.getElementById("valor").value.concat(".");
     }
 }
